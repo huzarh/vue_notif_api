@@ -3,11 +3,9 @@ const socketIO = require("socket.io");
 const cors = require("cors"); 
 const hpp = require("hpp");
 const http = require("http");
-const dotenv = require("dotenv");
 const connectDB = require("./config/db");
 
 const bodyParser = require('body-parser');
-dotenv.config({ path: "./config/.env" });
 const article = require("./routes/article");
 const Article = require("./models/Article");
  
@@ -48,8 +46,8 @@ app.use("/api/v1/article", article);
  
 
 server.listen(
-  process.env.PORT || 8000,
-  console.log(`Express сэрвэр ${process.env.PORT} порт дээр аслаа... `)
+   5000,
+  console.log(`express--> 5000 ... `)
 );
  
 process.on("HunhandledRejection", (err) => {
