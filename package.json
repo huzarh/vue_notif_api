@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --exec babel-node ./src/server",
-    "start":"node ./dist/server",
+    "start": "node ./dist/server",
     "build": "babel src -d dist"
   },
   "author": "khuzair",
@@ -18,7 +18,6 @@
     "express": "^4.18.2",
     "express-async-handler": "^1.2.0",
     "hpp": "^0.2.3",
-    "mongodb": "^6.2.0",
     "mongoose": "^8.0.0",
     "nodemon": "^3.0.1",
     "socket.io": "^4.7.2"

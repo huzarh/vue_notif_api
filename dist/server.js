@@ -18,7 +18,7 @@ const io = socketIO(server, {
   }
 });
 
-// app.use(express.static(path.join(__dirname, "public")));
+  //  app.use(express.static(path.join(__dirname, "public")));
 
 connectDB();
 const changeStream = Article.watch();
