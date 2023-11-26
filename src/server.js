@@ -13,7 +13,7 @@ const app = express();
 const server = http.createServer(app);
 const io = socketIO(server, { pingTimeout: 60000, cors: { origin: "*" } }); 
 
-// app.use(express.static(path.join(__dirname, "public")));
+// app.use(express.static(path.join(__dirname, "public")));fv
 
 connectDB();
 
